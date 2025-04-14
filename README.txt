@@ -1,8 +1,12 @@
 # OpenShift NVIDIA GPU Notes
 
+## Operator Configuration
+
+Only create a `ClusterPolicy``, it will handle driver installation. No need to create a `NVIDIADriver`, they will conflict if you do.
+
 ## Configure NVIDIA GPU Time Slicing
 
-[BLog for reference](https://www.redhat.com/en/blog/sharing-caring-how-make-most-your-gpus-part-1-time-slicing)
+[Blog for reference](https://www.redhat.com/en/blog/sharing-caring-how-make-most-your-gpus-part-1-time-slicing)
 
 ```bash
 oc apply -f time-slicing-config.yaml 
