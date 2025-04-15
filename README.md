@@ -2,7 +2,7 @@
 
 ## Operator Configuration
 
-Only create a `ClusterPolicy``, it will handle driver installation. No need to create a `NVIDIADriver`, they will conflict if you do.
+Only create a `ClusterPolicy`, it will handle driver installation. No need to create a `NVIDIADriver`, they will conflict if you do.
 
 ## Configure NVIDIA GPU Time Slicing
 
